@@ -10,7 +10,7 @@ body {
 
 div {
   width: 100%;
-  margin: 20px;
+  margin-top: 20px;
 }
 
 div li {
@@ -36,4 +36,93 @@ button {
 div li button {
   margin: 0 15px;
   background: #ca4949;
+  border-radius: 8px;
+}
+
+.container {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5;
+  margin: auto;
+}
+
+.container .group-input {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.container .group-input input {
+  width: 100%;
+  height: 30px;
+  margin-top: 8px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border-style: inherit;
+}
+
+.container .group-input button {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.container .group-input button:hover {
+  opacity: 0.8;
+}
+
+.container .content-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #5f4ca0;
+  margin: auto;
+  border-radius: 8px;
+  padding: 20px 0px;
+}
+
+.container .content-list h1 {
+  color: #f5f5f5;
+  margin-bottom: 40px;
+}
+
+.container .content-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container .content-list li {
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5;
+  border-style: solid;
+  border-radius: 8px;
+  font-weight: bold;
+  border-width: 1px;
+  border-color: #f5f5f5;
+  width: 200px;
+  margin: 10px 10px;
+  height: 80px;
+  justify-content: center;
+}
+
+.container .content-list button {
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.container .content-list button:hover {
+  opacity: 0.8;
 }
